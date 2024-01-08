@@ -1,4 +1,4 @@
-from project import retrieve_message, encode_bytes, choice_menu
+from project import retrieve_message, encode_bytes, choice_menu, manual_input, encryption, cli_input, saving_message
 import pytest
 from unittest.mock import patch
 
@@ -42,4 +42,16 @@ def test_choiceMenu():
         assert choice_menu() == 2
     with patch("builtins.input", return_value="3"):
         assert choice_menu() == 3
+
+def test_savingMessage():
+    ...
+
+def test_encryption():
+    ...
+
+def test_cliInput():
+    ...
+
+def test_manualInput():
+    ...
 

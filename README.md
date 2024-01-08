@@ -1,10 +1,13 @@
 Encrypted Message Retrieval Program
 Overview
-This program is designed to retrieve an encrypted message stored in a database using a in this instance message specific key. The encryption and decryption are handled by a crypt module that i have written myself, and the messages are stored and retrieved using a database module.
+This program is designed to:
+Let a user make a encrypted message that will be stored in a database.
+Retrieve an encrypted message stored in a database using a in this instance message specific key.
+The encryption and decryption are handled by a crypt module that i have written myself, and the messages are stored and retrieved using a database module.
 
 The crypt module.
 The encryption module i have written for this program is not sufficient for real-world use!
-To use this program for modern security it is adviced to use another mote sophisticated encryption module.
+To use this program for modern security it is adviced to use another more sophisticated encryption module.
 
 The database module.
 The database module i have written for this program makes use of files such as a csv.
@@ -15,6 +18,8 @@ Project.py
 This project was made as a final project for the course CS50P from harvard.
 This project is not meant to be used as a real encryption tool. But because it is structured with classes like crypt and database, it is possible to
 make this program more secure. You could add the functionality of username and password that is linked to a database. The password also needs to be handled safely and of course should minimally be hashed.
+So, the classes that are specified at the top of the project.py folder could be replaced with classes/libraries that handle encryption-decryption and database a lot better. You could implement a profile structure with unique usernames and passwords, passwords which also should meet a reasonably high standard of complexity.
+I know that this project is far from perfect, but to implement the above specified methodes and functions it would take too many hours to complete because the complexity that comes with those implementations is too much for what i, at this moment am capable of.
 
 Installation
 Clone the repository:

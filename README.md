@@ -23,7 +23,7 @@ I know that this project is far from perfect, but to implement the above specifi
 
 Installation
 Clone the repository:
-git clone https://github.com/ninja2002vw/your-repo.git
+git clone https://github.com/ninja2002vw/encryption-decryption.git
 
 Install the required dependencies:
 pip install -r requirements.txt

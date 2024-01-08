@@ -1,0 +1,5 @@
+"""
+This database holds all keys and messages as key-value pairs. This is not a safe way of storing encrypted data and so this method is not recommended.
+Please only use this csv for demonstration purposes, if you want to implement this encryption program please use a safe database and make use of passwords!
+"""
+Encrypted Messages:

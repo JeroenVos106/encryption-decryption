@@ -27,7 +27,11 @@ Usage
 Run the main program by executing the main.py script:
 
 python main.py
-Follow the on-screen instructions to interact with the program. If you choose option 3 to retrieve an encrypted message, you will be prompted to enter a key. The program will then decrypt the corresponding message using the key.
+Follow the on-screen instructions to interact with the program.
+if you choose option 1, the program will exit so you can rerun now with command-line input.
+if you choose option 2 you will be prompted for input of a message, after hitting enter you will recieve your key and a warning message.
+If you choose option 3 to retrieve an encrypted message, you will be prompted to enter a key. The program will then decrypt the corresponding message using the key.
+if you choose option 4 the program will quit.
 
 Testing
 Tests for the program are written using pytest. To run the tests, use the following command:

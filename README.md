@@ -1,2 +1,43 @@
-# encryption-decryption
-CLI Encryption and Decryption tool that makes use of keys 
+Encrypted Message Retrieval Program
+Overview
+This program is designed to retrieve an encrypted message stored in a database using a in this instance message specific key. The encryption and decryption are handled by a crypt module that i have written myself, and the messages are stored and retrieved using a database module.
+
+The crypt module.
+The encryption module i have written for this program is not sufficient for real-world use!
+To use this program for modern security it is adviced to use another mote sophisticated encryption module.
+
+The database module.
+The database module i have written for this program makes use of files such as a csv.
+This is also not a safe way for storing encrypted data.
+To safely store encrypted data, a real database should be used.
+
+Project.py
+This project was made as a final project for the course CS50P from harvard.
+This project is not meant to be used as a real encryption tool. But because it is structured with classes like crypt and database, it is possible to
+make this program more secure. You could add the functionality of username and password that is linked to a database. The password also needs to be handled safely and of course should minimally be hashed.
+
+Installation
+Clone the repository:
+git clone https://github.com/ninja2002vw/your-repo.git
+
+Install the required dependencies:
+pip install -r requirements.txt
+
+Usage
+Run the main program by executing the main.py script:
+
+python main.py
+Follow the on-screen instructions to interact with the program. If you choose option 3 to retrieve an encrypted message, you will be prompted to enter a key. The program will then decrypt the corresponding message using the key.
+
+Testing
+Tests for the program are written using pytest. To run the tests, use the following command:
+-pytest test_project.py
+This will execute the test cases in the tests directory, ensuring the functionality of the retrieve_message function.
+I only created 3 test for this program this is not because of negligence, but because it is not needed in the scope of this project. The other functions that could be (and should be!) tested for are in test_project.py but do not have functionality as of right now
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+This could help me improve my future code and projects!
+
+License
+This program is licensed under the MIT License.

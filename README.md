@@ -1,4 +1,3 @@
-```markdown
 # Encrypted Message Creation and Retrieval Program
 
 **Overview**

@@ -6,25 +6,48 @@ from database import Database
 database = Database("msg_database.csv")
 crypt = Crypt()
 
-
 def main():
-    user_choice: str = get_user_input()
+    while True:
+        user_choice: str = get_user_input()
+        if user_choice == "0":
+            print(handle_too_many_args(user_choice))
+        elif user_choice == "1":
+            print(handle_cli_input())
+        elif user_choice == "2":
+            print(handle_manual_input())
+        elif user_choice == "3":
+            print(handle_retrieve_message())
+
+
+def handle_too_many_args(user_choice):
     if user_choice == "0":
-        print("Too many command-line arguments!")
+        return "Too many command-line arguments!"
+
+
+def handle_cli_input(user_choice):
     if user_choice == "1":
         user_input = cli_input()
         encoded_input = encode_bytes(user_input)
-        print(encoded_input)
+    return encoded_input
+
+
+def handle_manual_input(user_choice):
     if user_choice == "2":
         user_manual = manual_input()
         saving_message(user_manual)
-        key = database.get_key() # Gets the key from the database that is accociated with the most recent input message, see Database.py for more information
+        key = (
+            database.get_key()
+        )  # Gets the key from the database that is accociated with the most recent input message, see Database.py for more information
         print(
             f"{key}\nKeep this safe! If you lose your key you will not be able to retrieve your message every again!"
         )
+
+
+def handle_retrieve_message(user_choice):
     if user_choice == "3":
         message = retrieve_message(user_choice)
-        print(message.decode())
+        return message.decode()
+
 
 
 def retrieve_message(raw_text):

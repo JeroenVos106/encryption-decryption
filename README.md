@@ -44,12 +44,12 @@ If you choose option 1, the program will exit so you can rerun now with command-
 If you choose option 2 you will be prompted for input of a message, after hitting enter you will receive your key and a warning message.
 If you choose option 3 to retrieve an encrypted message, you will be prompted to enter a key. The program will then decrypt the corresponding message using the key.
 If you choose option 4 the program will quit.
+
+
 Testing:
 
 Tests for the program are written using pytest. To run the tests, use the following command:
 
-bash
-Copy code
 pytest test_project.py
 This will execute the test cases in the tests directory, ensuring the functionality of the retrieve_message function. I only created 3 tests for this program. This is not because of negligence, but because it is not needed in the scope of this project. The other functions that could be (and should be!) tested for are in test_project.py but do not have functionality as of right now.
 

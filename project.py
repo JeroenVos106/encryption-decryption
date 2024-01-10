@@ -122,11 +122,15 @@ def choice_menu():
     """
     while True:
         try:
-            num: int = int(
-                input(
-                    "\nNo Command-Line input, for key input and only encoded key, on Command-Line press 1 and hit enter\nFor manual text input press 2 and hit enter\nFor retrieval of message press 3 and hit enter\nTo exit the program press 4 and hit enter\n"
-                )
-            )
+            print("No Command-Line input, for key input and only encoded key, on Command-Line press 1 and hit enter")
+            print("___________________________________________________________________________________________________")
+            print("For manual text input press 2 and hit enter")
+            print("___________________________________________________________________________________________________")
+            print("For retrieval of message press 3 and hit enter")
+            print("___________________________________________________________________________________________________")
+            print("To exit the program press 4 and hit enter")
+            print("___________________________________________________________________________________________________")
+            num: int = int(input("Input: "))
             if num == 1:
                 sys.exit("Please run program again with: python project.py your_file_here")
             if num == 2:
@@ -137,6 +141,7 @@ def choice_menu():
                 sys.exit("Goodbye!")
         except ValueError:
             print("\nPlease input a number")
+
 
 if __name__ == "__main__":
     main()

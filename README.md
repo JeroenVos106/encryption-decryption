@@ -1,5 +1,4 @@
-markdown
-Copy code
+```markdown
 # Encrypted Message Creation and Retrieval Program
 
 **Overview**
@@ -38,25 +37,31 @@ Run the main program by executing the `main.py` script:
 
 ```bash
 python main.py
+```
+
 Follow the on-screen instructions to interact with the program.
+- If you choose option 1, the program will exit so you can rerun now with command-line input.
+- If you choose option 2 you will be prompted for input of a message, after hitting enter you will receive your key and a warning message.
+- If you choose option 3 to retrieve an encrypted message, you will be prompted to enter a key. The program will then decrypt the corresponding message using the key.
+- If you choose option 4 the program will quit.
 
-If you choose option 1, the program will exit so you can rerun now with command-line input.
-If you choose option 2 you will be prompted for input of a message, after hitting enter you will receive your key and a warning message.
-If you choose option 3 to retrieve an encrypted message, you will be prompted to enter a key. The program will then decrypt the corresponding message using the key.
-If you choose option 4 the program will quit.
-
-
-Testing:
+**Testing:**
 
 Tests for the program are written using pytest. To run the tests, use the following command:
 
+```bash
 pytest test_project.py
-This will execute the test cases in the tests directory, ensuring the functionality of the retrieve_message function. I only created 3 tests for this program. This is not because of negligence, but because it is not needed in the scope of this project. The other functions that could be (and should be!) tested for are in test_project.py but do not have functionality as of right now.
+```
 
-Contributing:
+This will execute the test cases in the tests directory, ensuring the functionality of the `retrieve_message` function. I only created 3 tests for this program. This is not because of negligence, but because it is not needed in the scope of this project. The other functions that could be (and should be!) tested for are in `test_project.py` but do not have functionality as of right now.
+
+**Contributing:**
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. This could help me improve my future code and projects!
 
-License:
+**License:**
 
 This program is licensed under the MIT License.
+```
+
+Please make sure to check the formatting and adjust as needed.

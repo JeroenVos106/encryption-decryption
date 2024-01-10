@@ -1,8 +1,8 @@
-Encrypted Message Retrieval Program
+Encrypted Message Creation and Retrieval Program
 Overview
 This program is designed to:
 Let a user make a encrypted message that will be stored in a database.
-Retrieve an encrypted message stored in a database using a in this instance message specific key.
+Retrieve an encrypted message stored in a database using a, in this instance: message specific key.
 The encryption and decryption are handled by a crypt module that i have written myself, and the messages are stored and retrieved using a database module.
 
 The crypt module.

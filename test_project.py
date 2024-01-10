@@ -1,4 +1,4 @@
-from project import retrieve_message, encode_bytes, choice_menu, manual_input, encryption, cli_input, saving_message
+from project import retrieve_message, encode_bytes, choice_menu, manual_input, encryption, cli_input, saving_message, handle_too_many_args, handle_cli_input, handle_manual_input, handle_retrieve_message
 import pytest
 from unittest.mock import patch
 
@@ -54,4 +54,15 @@ def test_cliInput():
 
 def test_manualInput():
     ...
+    
+def test_handleTMA():
+    ...
 
+def test_handleCLII():
+    ...
+
+def test_handleMI():
+    ...
+
+def test_handleRM():
+    ...

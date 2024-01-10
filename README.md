@@ -17,9 +17,12 @@ To safely store encrypted data, a real database should be used.
 Project.py
 This project was made as a final project for the course CS50P from harvard.
 This project is not meant to be used as a real encryption tool. But because it is structured with classes like crypt and database, it is possible to
-make this program more secure. You could add the functionality of username and password that is linked to a database. The password also needs to be handled safely and of course should minimally be hashed.
+make this program more secure. You could add the functionality of username and password that is linked to a database. The password also needs to be handled safely and of course should minimally be encrypted as well(This is still not the safest methode but better than storing passwords as plain text).
 So, the classes that are specified at the top of the project.py folder could be replaced with classes/libraries that handle encryption-decryption and database a lot better. You could implement a profile structure with unique usernames and passwords, passwords which also should meet a reasonably high standard of complexity.
 I know that this project is far from perfect, but to implement the above specified methodes and functions it would take too many hours to complete because the complexity that comes with those implementations is too much for what i, at this moment am capable of.
+
+One final important note for this program:
+When encrypting and decrypting data, the keys that are generated should not be used in a printing manner. Keys should be passed around (safely) inside of your program and/or database.
 
 Installation
 Clone the repository:

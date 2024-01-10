@@ -12,11 +12,11 @@ def main():
         if user_choice == "0":
             print(handle_too_many_args(user_choice))
         elif user_choice == "1":
-            print(handle_cli_input())
+            print(handle_cli_input(user_choice))
         elif user_choice == "2":
-            print(handle_manual_input())
+            print(handle_manual_input(user_choice))
         elif user_choice == "3":
-            print(handle_retrieve_message())
+            print(handle_retrieve_message(user_choice))
 
 
 def handle_too_many_args(user_choice):
@@ -38,7 +38,7 @@ def handle_manual_input(user_choice):
         key = (
             database.get_key()
         )  # Gets the key from the database that is accociated with the most recent input message, see Database.py for more information
-        print(
+        return(
             f"{key}\nKeep this safe! If you lose your key you will not be able to retrieve your message every again!"
         )
 

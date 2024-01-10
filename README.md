@@ -32,6 +32,7 @@ Usage
 Run the main program by executing the main.py script:
 
 python main.py
+
 Follow the on-screen instructions to interact with the program.
 if you choose option 1, the program will exit so you can rerun now with command-line input.
 if you choose option 2 you will be prompted for input of a message, after hitting enter you will recieve your key and a warning message.
